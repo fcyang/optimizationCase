@@ -1,0 +1,277 @@
+D:\workspace\JENSENHUGHES\optimization\optimizationCase\config\PMMA\dataGeneration\../../../results/PMMA/PMMAMultiHeatFluxNominal Log file
+!!python/object/apply:collections.defaultdict
+args:
+- !!python/name:builtins.bool ''
+dictitems:
+  Duraboard:
+    CprampF:
+    - 1.0
+    - 1.0
+    CprampT:
+    - 0
+    - 5000
+    eps: 0.8
+    krampF:
+    - 0.075932
+    - 0.090229
+    - 0.104522
+    - 0.122143
+    - 0.14158
+    - 0.163436
+    - 0.190738
+    - 0.221975
+    krampT:
+    - 203.035
+    - 317.4028
+    - 426.9164
+    - 536.4182
+    - 647.3003
+    - 757.4803
+    - 867.6409
+    - 981.2546
+    rho: 258
+    thickness: 0.0254
+  cone:
+    activePhaseVars:
+    - C0
+    - rho
+    - ka
+    - kb
+    - kc
+    - kd
+    - ke
+    - Cpa
+    - Cpb
+    - Cpc
+    - Cpd
+    - Cpe
+    - eps
+    - K
+    activeReactionVars:
+    - A
+    - E
+    - n
+    - Hp
+    - nO2
+    weight: 1.0
+  cone1:
+    Tinit: 25
+    columns:
+    - 1
+    depths:
+    - 0
+    file: ../../../data/PMMAFake1.csv
+    heatFlux: 20
+    names:
+    - Weight
+    thickness: 0.00952
+    time: 0
+    types:
+    - 1
+    weights:
+    - 1
+    width1: 0.1016
+    width2: 0.1016
+  cone2:
+    Tinit: 25
+    columns:
+    - 1
+    depths:
+    - 0
+    file: ../../../data/PMMAFake2.csv
+    heatFlux: 30
+    names:
+    - Weight
+    thickness: 0.00952
+    time: 0
+    types:
+    - 1
+    weights:
+    - 1
+    width1: 0.1016
+    width2: 0.1016
+  cone3:
+    Tinit: 25
+    columns:
+    - 1
+    depths:
+    - 0
+    file: ../../../data/PMMAFake2.csv
+    heatFlux: 40
+    names:
+    - Weight
+    thickness: 0.00952
+    time: 0
+    types:
+    - 1
+    weights:
+    - 1
+    width1: 0.1016
+    width2: 0.1016
+  configDir: D:\workspace\JENSENHUGHES\optimization\optimizationCase\config\PMMA\dataGeneration\
+  dataSources:
+    names:
+    - cone1
+    - cone2
+    - cone3
+    types:
+    - cone
+    - cone
+    - cone
+  dsc:
+    activePhaseVars:
+    - C0
+    - Cpa
+    - Cpb
+    - Cpc
+    - Cpd
+    - Cpe
+    activeReactionVars:
+    - A
+    - E
+    - n
+    - Hp
+    dscO2: None
+    weight: 1.0
+  fdsPath: false
+  name: PMMAMultiHeatFluxNominal
+  optimizeParams:
+    absErr: 1e-9
+    absRelErr: 1e-6
+    elimThresh: 1e-2
+    maxIter: -1
+    maxTime: -1
+    minIter: -1
+    minP: 2
+    opAlpha: 1
+    opBeta: 1
+    opP: 1
+    opQ: 1
+    opS: 1
+    relErr: 1e-15
+    relIter: 15
+  outputParams:
+    saveAllSamples: true
+  phaseParams:
+    C0:
+    - - 1.0
+      - 0
+      - 1
+    Cpa:
+    - - 1341
+      - 1000
+      - 2800
+    Cpb:
+    - - 0.0
+      - 0.0
+      - 0.0
+    Cpc:
+    - - 0
+      - 0
+      - 1
+    Cpd:
+    - - 0
+      - 0
+      - 1
+    Cpe:
+    - - 0
+      - 0
+      - 1
+    K:
+    - - 1000
+      - 500
+      - 3000
+    eps:
+    - - 0.8
+      - 0.75
+      - 1.0
+    ka:
+    - - 0.233969
+      - 0.1
+      - 0.3
+    kb:
+    - - 0.0
+      - 0.0
+      - 0.0
+    kc:
+    - - 0
+      - 0
+      - 1
+    kd:
+    - - 0
+      - 0
+      - 1
+    ke:
+    - - 0
+      - 0
+      - 1
+    nO2:
+    - - 0
+      - 0
+      - 1
+    phases:
+    - virgin
+    rho:
+    - - 1189.37
+      - 1189
+      - 1189
+  processParams:
+    maxProcesses: 4
+    multiprocess: true
+  reactionParams:
+    A:
+    - - 50800000000.0
+      - 4e8
+      - 7e12
+    E:
+    - - 157000.0
+      - 1.20e5
+      - 2.0e5
+    Hp:
+    - - 788000
+      - 630e3
+      - 945e3
+    n:
+    - - 0.91
+      - 0.73
+      - 1.5
+    nO2:
+    - - 0
+      - 0
+      - 1
+    prodState:
+    - -1
+    reacState:
+    - 0
+    typeState:
+    - 3
+  reinitializeComplex: false
+  restart: false
+  resultsDir: ../../../results/PMMA/
+  systemDir: D:\workspace\JENSENHUGHES\optimization\sourceCode\optimizationpython\src
+  tga:
+    activePhaseVars:
+    - C0
+    - rho
+    activeReactionVars:
+    - A
+    - E
+    - n
+    tgaO2: None
+    tgaOpt: 1
+    weight: 1.0
+  virtualExperiment: true
+Loop	t (s)	Error Min	Error Max	ErrorRel	Comp	Samples
+A	 = 5.08e+10,
+C0	 = 1.0,
+Cpa	 = 1341.0,
+E	 = 1.57e+05,
+Hp	 = 788000.0,
+K	 = 1000.0,
+Value	 = 0.025524739383069962,
+eps	 = 0.8,
+ka	 = 0.233969,
+n	 = 0.91,
+nO2	 = 0.0,
+rho	 = 1189.37,
+Results saved to D:\workspace\JENSENHUGHES\optimization\optimizationCase\config\PMMA\dataGeneration\../../../results/PMMA/PMMAMultiHeatFluxNominal_solution.txt

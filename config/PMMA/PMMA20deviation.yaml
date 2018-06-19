@@ -1,0 +1,55 @@
+name: PMMA20deviation
+outputParams:
+  saveAllSamples: True
+restart: True
+resultsDir: '../../results/paper/PMMA/'
+cone1:
+  file: '../../data/PMMA-nominal_0_cone_Mass.csv'
+  time: 0
+  heatFlux: 20
+  Tinit: 25
+  width1: 0.1016
+  width2: 0.1016
+  thickness: 0.00952
+  names: ['Mass [Kg]']
+  columns: [1]
+  weights: [1]
+  depths: [0]
+  types: [1]
+processParams:
+  multiprocess: True
+  maxProcesses: 4
+optimizeParams:
+  opP: 5
+  opS: 100
+  opQ: 10
+  opAlpha: 5
+  opBeta: 5
+  minIter: 1
+  maxIter: 2000
+  absErr: 1e-9
+  relErr: 1e-15
+  relIter: 15
+  maxTime: 1E6
+phaseParams:
+  phases: ['virgin']
+  C0:   [[1,      0,      1]      ]
+  ka:   [[None,     0.16,   0.24]   ]
+  kb:   [[0.0,      0.0,    0.0]    ]
+  rho:  [[1180,     1189,   1189]   ]
+  Cpa:  [[None,     1760,   2640]   ]
+  Cpb:  [[0.0,      0.0,    0.0]    ]
+  eps:  [[None,     0.76,   1.0]    ]
+  K:    [[None,     800,    1200]   ]
+  nO2:  [[0,        0,      1]      ]
+dataSources:
+  names: ['cone1']
+  types: ['cone']
+reactionParams:
+  A:   [[None,  4.064e10,    6.096e10]]
+  E:   [[None,  1.256e5, 1.884e5]]
+  n:   [[None,  0.728,   1.092]]
+  Hp:  [[None,  630.4e3,  945.6e3]]
+  typeState: [3]
+  reacState: [0]
+  prodState: [-1]

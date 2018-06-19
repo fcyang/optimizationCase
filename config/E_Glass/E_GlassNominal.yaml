@@ -1,0 +1,56 @@
+name: E_Glass-nominal
+virtualExperiment: True
+outputParams:
+  saveAllSamples: True
+restart: False
+resultsDir: '../../results/E_Glass/'
+cone1:
+  file: '../../data/coneTest2.csv'
+  time: 0
+  heatFlux: 20
+  Tinit: 25
+  width1: 0.1016
+  width2: 0.1016
+  thickness: 0.00635
+  names: ['Mass']
+  columns: [1]
+  weights: [1]
+  depths: [0]
+  types: [1]
+processParams:
+  multiprocess: True
+  maxProcesses: 4
+optimizeParams:
+  opP: 1
+  opS: 2
+  opQ: 2
+  opAlpha: 5
+  opBeta: 5
+  minIter: 0
+  maxIter: 0
+  absErr: 1e-9
+  relErr: 1e-15
+  relIter: 15
+  maxTime: 1E6
+phaseParams:
+  phases: ['virgin', 'char']
+  C0:   [[1,      0,      1], [0,  1189,   1189]      ]
+  ka:   [[0.3,     0.10,   0.30], [0.2,  1189,   1189]   ]
+  kb:   [[0.0,      0.0,    0.0], [0.0,  0.0,   0.0]     ]
+  rho:  [[1683,  1189,   1189], [1235,  1189,   1189]   ]
+  Cpa:  [[1500,     1000,   2800], [1100,  1189,   1189]   ]
+  Cpb:  [[0.0,      0.0,    0.0], [0.0,  1189,   1189]    ]
+  eps:  [[0.94,     0.75,   1.0], [0.94,  1189,   1189]    ]
+  K:    [[10000,     500,    3000], [0,  1189,   1189]   ]
+  nO2:  [[0,        0,      1], [0,  1189,   1189]      ]
+dataSources:
+  names: ['cone1']
+  types: ['cone']
+reactionParams:
+  A:   [[2.34e12,  4e8,    7e12]]
+  E:   [[1.81e5,  1.20e5, 2.0e5]]
+  n:   [[1.0,  0.73,   1.5]]
+  Hp:  [[100e3,  630e3,  945e3]]
+  typeState: [3,3]
+  reacState: [0]
+  prodState: [1]
